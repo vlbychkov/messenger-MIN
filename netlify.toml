@@ -1,6 +1,6 @@
 [build]
   base = "messenger-min"
-  command = "npm run build"
+  command = "ls && npm run build"
   publish = "messenger-min/dist"
 
 
