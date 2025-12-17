@@ -1,7 +1,8 @@
 [build]
   base = "messenger-min"
-  command = "npm i && npm run build"
+  command = "npm ci && npm run build"
   publish = "messenger-min/dist"
+
 
 [build.environment]
   NODE_VERSION = "22"
