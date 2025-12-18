@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import handlebars from 'vite-plugin-handlebars'
+import sass from 'vite-plugin-sass'
 
 export default defineConfig({
     server: {
@@ -8,7 +9,9 @@ export default defineConfig({
     build: {
         outDir: 'dist',
     },
-    plugins: [handlebars({
+    plugins: [
+        sass(),
+        handlebars({
         partialDirectory: 'src',
         context: {
             user: {
