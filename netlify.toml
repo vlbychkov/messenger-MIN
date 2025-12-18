@@ -1,7 +1,7 @@
 [build]
   base = "messenger-min"
   command = "npm run build"
-  publish = "dist"
+  publish = "dist/src"
 
 
 [build.environment]
@@ -9,5 +9,5 @@
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/main.html"
   status = 200
