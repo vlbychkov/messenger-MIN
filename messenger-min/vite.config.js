@@ -18,17 +18,17 @@ export default defineConfig({
                 {
                     name: 'login',
                     type: 'text',
-                    text: 'Логин',
+                    text: 'Login',
                     id: 'loginAuth',
-                    placeholder: 'Введите почту или логин',
+                    placeholder: 'Enter email or username',
                     required: true,
                 },
                 {
                     name: 'password',
                     type: 'password',
-                    text: 'Пароль',
+                    text: 'Password',
                     id: 'passwordAuth',
-                    placeholder: 'Введите пароль',
+                    placeholder: 'Enter password',
                     required: true,
                 }
             ],
@@ -36,33 +36,33 @@ export default defineConfig({
                 {
                     name: 'first_name',
                     type: 'text',
-                    text: 'Имя',
+                    text: 'First Name',
                     id: 'firstName',
-                    placeholder: 'Введите ваше имя',
+                    placeholder: 'Enter your first name',
                     required: true
                 },
                 {
                     name: 'second_name',
                     type: 'text',
-                    text: 'Фамилия',
+                    text: 'Last Name',
                     id: 'lastName',
-                    placeholder: 'Введите вашу фамилию',
+                    placeholder: 'Enter your last name',
                     required: true
                 },
                 {
                     name: 'login',
                     type: 'text',
-                    text: 'Логин',
+                    text: 'Username',
                     id: 'userLogin',
-                    placeholder: 'Придумайте логин',
+                    placeholder: 'Create a username',
                     required: true
                 },
                 {
                     name: 'password',
                     type: 'password',
-                    text: 'Пароль',
+                    text: 'Password',
                     id: 'userPassword',
-                    placeholder: 'Придумайте пароль',
+                    placeholder: 'Create a password',
                     required: true
                 },
                 {
@@ -76,18 +76,18 @@ export default defineConfig({
                 {
                     name: 'phone',
                     type: 'tel',
-                    text: 'Телефон',
+                    text: 'Phone',
                     id: 'userPhone',
                     placeholder: '+7 (999) 123-45-67',
                     required: true
                 }
             ],
             manageSettingsUserFields: [
-                // Todo подумать над аватаром, как правильно сделать
+                // TODO: Think about the avatar, how to implement it correctly
                 {
                     name: 'avatar',
                     type: 'file',
-                    text: 'Аватар',
+                    text: 'Avatar',
                     id: 'avatar',
                     accept: '/default-avatar.png"',
                     required: false
@@ -95,33 +95,33 @@ export default defineConfig({
                 {
                     name: 'first_name',
                     type: 'text',
-                    text: 'Имя',
+                    text: 'First Name',
                     id: 'firstName',
-                    placeholder: 'Введите ваше имя',
+                    placeholder: 'Enter your first name',
                     required: false
                 },
                 {
                     name: 'second_name',
                     type: 'text',
-                    text: 'Фамилия',
+                    text: 'Last Name',
                     id: 'lastName',
-                    placeholder: 'Введите вашу фамилию',
+                    placeholder: 'Enter your last name',
                     required: false
                 },
                 {
                     name: 'display_name',
                     type: 'text',
-                    text: 'Отображаемое имя',
+                    text: 'Display Name',
                     id: 'displayName',
-                    placeholder: 'Введите отображаемое имя',
+                    placeholder: 'Enter a display name',
                     required: false
                 },
                 {
                     name: 'login',
                     type: 'text',
-                    text: 'Логин',
+                    text: 'Username',
                     id: 'userLogin',
-                    placeholder: 'Введите логин',
+                    placeholder: 'Enter a username',
                     required: false
                 },
                 {
@@ -135,7 +135,7 @@ export default defineConfig({
                 {
                     name: 'phone',
                     type: 'tel',
-                    text: 'Телефон',
+                    text: 'Phone',
                     id: 'userPhone',
                     placeholder: '+7 (999) 123-45-67',
                     required: false
@@ -143,20 +143,20 @@ export default defineConfig({
                 {
                     name: 'oldPassword',
                     type: 'password',
-                    text: 'Старый пароль',
+                    text: 'Old Password',
                     id: 'oldPassword',
-                    placeholder: 'Введите старый пароль',
+                    placeholder: 'Enter old password',
                     required: false
                 },
                 {
                     name: 'newPassword',
                     type: 'password',
-                    text: 'Новый пароль',
+                    text: 'New Password',
                     id: 'newPassword',
-                    placeholder: 'Введите новый пароль',
+                    placeholder: 'Enter new password',
                     required: false
                 }
-            ]
+            ],
         }
     })]
 })
