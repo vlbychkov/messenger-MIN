@@ -1,7 +1,7 @@
-<form>
+<form method="post">
     {{#each registerPageFields}}
         {{> atoms/field-input this}}
     {{/each}}
-    {{> atoms/button to='../../' type="submit" value='Create account'}}
+    {{> atoms/button to='../../src/messenger/messenger.html' type="submit" value='Create account'}}
     {{> atoms/button to='../../' type="button" value='Sign in'}}
 </form>

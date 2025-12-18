@@ -1,16 +1,24 @@
 import { defineConfig } from 'vite'
 import handlebars from 'vite-plugin-handlebars'
+import { resolve } from 'path';
+
 
 export default defineConfig({
     server: {
         port: 3000,
+        headers: {
+            'Content-Type': 'text/html; charset=utf-8'
+        }
     },
     build: {
         outDir: 'dist',
     },
     plugins: [
         handlebars({
-        partialDirectory: 'src',
+        partialDirectory: resolve(__dirname, 'src'),
+        compileOptions: {
+           preventIndent: true,
+        },
         context: {
             user: {
                 usernameDefault: 'Инэпришэлец 2',
@@ -84,13 +92,12 @@ export default defineConfig({
                 }
             ],
             manageSettingsUserFields: [
-                // TODO: Think about the avatar, how to implement it correctly
                 {
                     name: 'avatar',
                     type: 'file',
                     text: 'Avatar',
                     id: 'avatar',
-                    accept: '/default-avatar.png"',
+                    accept: '/default-avatar.png',
                     required: false
                 },
                 {
