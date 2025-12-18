@@ -1,0 +1,7 @@
+<form action="#" method="post">
+    {{#each loginPageFields}}
+        {{> atoms/field-input this}}
+    {{/each}}
+    {{> atoms/button type="submit" value='Авторизация'}}
+    {{> atoms/button type="button" value='Нет аккаунта?'}}
+</form>

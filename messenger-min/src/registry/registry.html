@@ -1,0 +1,7 @@
+<form>
+    {{#each registerPageFields}}
+        {{> atoms/field-input this}}
+    {{/each}}
+    {{> atoms/button type="submit" value='Зарегистрироваться'}}
+    {{> atoms/button type="button" value='Нет аккаунта?'}}
+</form>
