@@ -1,6 +1,10 @@
 import { defineConfig } from 'vite'
 import handlebars from 'vite-plugin-handlebars'
 import { resolve } from 'path';
+import { glob } from 'glob';
+import path from 'path';
+
+
 
 
 export default defineConfig({
@@ -12,6 +16,14 @@ export default defineConfig({
     },
     build: {
         outDir: 'dist',
+        rollupOptions: {
+            input: Object.fromEntries(
+                glob.sync('src/**/*.html').map(file => [
+                    path.relative('src', file.slice(0, -path.extname(file).length)),
+                    path.resolve(__dirname, file)
+                ])
+            )
+        }
     },
     plugins: [
         handlebars({

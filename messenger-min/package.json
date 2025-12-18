@@ -15,6 +15,7 @@
     "vite-plugin-sass": "^0.1.0"
   },
   "dependencies": {
+    "glob": "^13.0.0",
     "vite-plugin-handlebars": "^2.0.0"
   }
 }
