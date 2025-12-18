@@ -17,12 +17,15 @@ export default defineConfig({
     build: {
         outDir: 'dist',
         rollupOptions: {
-            input: Object.fromEntries(
-                glob.sync('src/**/*.html').map(file => [
-                    path.relative('src', file.slice(0, -path.extname(file).length)),
-                    path.resolve(__dirname, file)
-                ])
-            )
+            input: {
+                index: path.resolve(__dirname, 'index.html'),
+                ...Object.fromEntries(
+                    glob.sync('src/**/*.html').map(file => [
+                        path.relative('src', file.slice(0, -path.extname(file).length)),
+                        path.resolve(__dirname, file)
+                    ])
+                )
+            }
         }
     },
     plugins: [
