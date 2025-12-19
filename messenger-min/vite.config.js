@@ -46,6 +46,7 @@ export default defineConfig({
                     id: 'loginAuth',
                     placeholder: 'Enter email or username',
                     required: true,
+                    disabled: true
                 },
                 {
                     name: 'password',
@@ -54,6 +55,7 @@ export default defineConfig({
                     id: 'passwordAuth',
                     placeholder: 'Enter password',
                     required: true,
+                    disabled: true
                 }
             ],
             registerPageFields: [
@@ -107,14 +109,6 @@ export default defineConfig({
                 }
             ],
             manageSettingsUserFields: [
-                {
-                    name: 'avatar',
-                    type: 'file',
-                    text: 'Avatar',
-                    id: 'avatar',
-                    accept: '/default-avatar.png',
-                    required: false
-                },
                 {
                     name: 'first_name',
                     type: 'text',
