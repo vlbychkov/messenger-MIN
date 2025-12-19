@@ -2,6 +2,5 @@
 @use '../style';
 
 .registry {
-  @include mixins.card;
+    @include mixins.card;
 }
-
