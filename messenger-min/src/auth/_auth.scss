@@ -1,0 +1,5 @@
+@use '../mixins';
+
+.auth {
+  @include mixins.card;
+}

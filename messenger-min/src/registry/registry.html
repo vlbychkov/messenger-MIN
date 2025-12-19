@@ -1,7 +1,25 @@
-<form method="post">
-    {{#each registerPageFields}}
-        {{> atoms/field-input this}}
-    {{/each}}
-    {{> atoms/button to='../../src/messenger/messenger.html' type="submit" value='Create account'}}
-    {{> atoms/button to='../../' type="button" value='Sign in'}}
-</form>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+    <style>@import "_registry.scss";</style>
+</head>
+<body class="app">
+<div class="registry">
+    <h1 class="registry_title">Регистрация</h1>
+    <form class="registry_form" method="post">
+        <div class="fields">
+            {{#each registerPageFields}}
+                {{> atoms/field-input this}}
+            {{/each}}
+        </div>
+        <div class="actions">
+            {{> atoms/button to='../../src/messenger/messenger.html' type="submit" value='Create account'}}
+            {{> atoms/button to='../../' type="button" value='Sign in'}}
+        </div>
+    </form>
+</div>
+</body>
+</html>

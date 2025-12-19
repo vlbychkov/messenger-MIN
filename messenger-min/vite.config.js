@@ -5,8 +5,6 @@ import { glob } from 'glob';
 import path from 'path';
 
 
-
-
 export default defineConfig({
     server: {
         port: 3000,

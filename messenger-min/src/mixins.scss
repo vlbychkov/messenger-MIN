@@ -1,0 +1,32 @@
+@mixin card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px;
+  height: 505px;
+  border-radius: 20px;
+  padding: 50px 20px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.14);
+
+
+  &_form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+    & .fields {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    & .actions {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
