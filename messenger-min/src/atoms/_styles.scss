@@ -1,0 +1,31 @@
+.button {
+    width: 100%;
+    height: 45px;
+    border: none;
+    background: rgba(51, 105, 243, 1);
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+}
+.secondary {
+    background: none;
+    color: rgba(51, 105, 243, 1);
+}
+
+.search {
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    background: rgba(239, 239, 239, 1);
+    padding: 12px 0;
+}
+
+.link {
+    background: none;
+    color: rgba(153, 153, 153, 1);
+    font-size: 16px;
+    height: auto;
+    text-align: end;
+}
