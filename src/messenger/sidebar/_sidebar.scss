@@ -1,0 +1,18 @@
+.sidebar {
+    border-right: 2px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px 10px;
+    background: rgba(250, 250, 250, 1);
+
+    &_header {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+        padding-bottom: 16px;
+        border-bottom: 2px solid lightgray;
+        justify-content: flex-end;
+    }
+}

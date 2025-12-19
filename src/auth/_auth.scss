@@ -1,0 +1,9 @@
+@use '../mixins';
+
+.auth {
+    @include mixins.card;
+}
+
+.actions {
+    width: 100%;
+}

@@ -1,0 +1,6 @@
+@use '../mixins';
+@use '../style';
+
+.registry {
+    @include mixins.card;
+}
