@@ -18,11 +18,22 @@
 4. Или запуск локально: npm run dev
 
 ## Структура проекта
-*еще дорабатывается*
+Страница авторизации - [Auth](https://github.com/vlbychkov/middle.messenger.praktikum.yandex/blob/sprint_1/messenger-min/src/auth/auth.html)
+
+Страница регистрации - [Registry](https://github.com/vlbychkov/middle.messenger.praktikum.yandex/blob/sprint_1/messenger-min/src/registry/registry.html)
+
+Страница ошибки 404 - [404](https://github.com/vlbychkov/middle.messenger.praktikum.yandex/blob/sprint_1/messenger-min/src/errors/error-404.html)
+
+Страница ошибки 500 - [500](https://github.com/vlbychkov/middle.messenger.praktikum.yandex/blob/sprint_1/messenger-min/src/errors/error-500.html)
+
+Страница мессенджера, чатов, списка диалогов - [Messenger](https://github.com/vlbychkov/middle.messenger.praktikum.yandex/tree/sprint_1/messenger-min/src/messenger)
+
+Страница настроек профиля - [settings-user](https://github.com/vlbychkov/middle.messenger.praktikum.yandex/tree/sprint_1/messenger-min/src/settings-user)
 
 ## Дизайн
-*дизайн разрабатывается дизайнером и будет готов к середине января в виде макета, а в начале
-февраля будет готов дизайн на самом проекте*
+*дизайн разрабатывается и дорабатывается*
+
+[Использовались макеты Яндекса](https://www.figma.com/design/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0-1&p=f&t=WCNAPCZ7IWhSxEiv-0)
 
 ## Kanban доска
 ### [Yonote Kanban-доска](https://vlbychkov.yonote.ru/share/9c894d95-695c-4395-921e-62cbfbc58bc6)

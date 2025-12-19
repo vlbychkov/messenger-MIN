@@ -2,7 +2,8 @@
 @use '../../style';
 @use '../buttons/buttons';
 
-body {
+body,
+main {
     display: flex;
     justify-content: center;
     align-items: center;

@@ -9,16 +9,18 @@
         </style>
     </head>
     <body>
-        <div class="settings">
-            {{> atoms/avatar-user width='130' height='130'}}
-            <form
-                method="post"
-                class="settings_form"
-                enctype="multipart/form-data"
-            >
-                {{> settings-user/fields/fields}} {{>
-                settings-user/buttons/buttons}}
-            </form>
-        </div>
+        <main>
+            <div class="settings">
+                {{> atoms/avatar-user width='130' height='130'}}
+                <form
+                    method="post"
+                    class="settings_form"
+                    enctype="multipart/form-data"
+                >
+                    {{> settings-user/fields/fields}} {{>
+                    settings-user/buttons/buttons}}
+                </form>
+            </div>
+        </main>
     </body>
 </html>
