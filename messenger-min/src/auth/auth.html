@@ -2,7 +2,8 @@
     <h1 class="auth_title">Вход</h1>
     <form class="auth_form" method="post">
         <div class="fields">
-            {{#each loginPageFields}} {{> atoms/field-input this}} {{/each}}
+            {{#each loginPageFields}} {{> atoms/field-input this
+            style='primary-input'}} {{/each}}
         </div>
         <div class="actions">
             {{> atoms/button type="submit" to='src/messenger/messenger.html'

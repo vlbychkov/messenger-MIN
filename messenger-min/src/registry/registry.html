@@ -13,13 +13,13 @@
             <h1 class="registry_title">Регистрация</h1>
             <form class="registry_form" method="post">
                 <div class="fields">
-                    {{#each registerPageFields}} {{> atoms/field-input this}}
-                    {{/each}}
+                    {{#each registerPageFields}} {{> atoms/field-input this
+                    style='primary-input'}} {{/each}}
                 </div>
                 <div class="actions">
                     {{> atoms/button to='../../src/messenger/messenger.html'
-                    type="submit" value='Create account'}} {{> atoms/button
-                    to='../../' type="button" value='Sign in'}}
+                    type='submit' value='Создать аккаунт'}} {{> atoms/button
+                    style='secondary' to='../../' type='button' value='Войти'}}
                 </div>
             </form>
         </div>

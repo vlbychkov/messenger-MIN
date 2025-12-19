@@ -1,6 +1,24 @@
-<div>
-    {{> atoms/avatar-user width='130' height='130'}}
-    <form method="post" enctype="multipart/form-data">
-        {{> settings-user/fields/fields}} {{> settings-user/buttons/buttons}}
-    </form>
-</div>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Регистрация</title>
+        <style>
+            @import '_manage-settings.scss';
+        </style>
+    </head>
+    <body>
+        <div class="settings">
+            {{> atoms/avatar-user width='130' height='130'}}
+            <form
+                method="post"
+                class="settings_form"
+                enctype="multipart/form-data"
+            >
+                {{> settings-user/fields/fields}} {{>
+                settings-user/buttons/buttons}}
+            </form>
+        </div>
+    </body>
+</html>

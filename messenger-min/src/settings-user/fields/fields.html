@@ -1,8 +1,5 @@
-<div>
+<div class="settings_fields">
     {{#each manageSettingsUserFields}}
-    <div>
-        <p>{{this.text}}</p>
-        {{> atoms/field-input text=''}}
-    </div>
+    <div>{{> atoms/field-input this style='primary-input' }}</div>
     {{/each}}
 </div>
