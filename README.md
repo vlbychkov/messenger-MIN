@@ -2,7 +2,14 @@
 # Мессенджер MIN
 ## Описание
 ### Проект направлен на создание комичного аналога мессенджера MAX.
-## Технологии - Vanila Js, Handlebars, Vite
+## Технологии:
+
+![Handlebars](https://img.shields.io/badge/Handlebars-%23000000?style=for-the-badge&logo=Handlebars.js&logoColor=white)
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+
 *еще дополнится список*
 ## Запуск проекта
 1. Клонируйте репозиторий
